@@ -405,7 +405,7 @@
 
 	.question-wrapper {
 		position: relative;
-		background-image: url('paper-image-dk.png');
+		background-image: url('images/paper-image-dk.png');
 		padding: 2rem;
 		height: 18rem;
 	}

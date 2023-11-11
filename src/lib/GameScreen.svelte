@@ -68,7 +68,7 @@
 	}
 
 	.gamescreen-wrapper.choiceClicked {
-		background-image: url('market.jpg');
+		background-image: url('images/market.jpg');
 	}
 
 	.top-nav-layout {
