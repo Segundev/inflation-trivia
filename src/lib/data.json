@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "question": "Inflation in Nigeria means that the prices of goods and services are rising.",
+    "answer": "Inflation in Nigeria means that the prices of goods and services are rising. This is true because inflation represents a general increase in prices over time.",
+    "response": true
+  },
+  {
+    "id": 2,
+    "question": "In an inflationary economy, your money's purchasing power decreases over time.",
+    "answer": "In an inflationary economy, your money's purchasing power decreases over time. True, because you can buy less with the same amount of money as prices rise.",
+    "response": true
+  },
+  {
+    "id": 3,
+    "question": "When inflation is high, it's a good idea to keep all your savings in cash.",
+    "answer": "When inflation is high, it's a good idea to keep all your savings in cash. False, because cash loses value during inflation. It's better to invest in assets that can keep up with or outpace inflation.",
+    "response": false
+  },
+  {
+    "id": 4,
+    "question": "Inflation doesn't affect people's ability to buy basic necessities like food and housing.",
+    "answer": "Inflation doesn't affect people's ability to buy basic necessities like food and housing. False, because inflation affects the prices of both basic necessities and other goods and services.",
+    "response": false
+  },
+  {
+    "id": 5,
+    "question": "In an inflationary economy, it's wise to invest in assets like real estate or stocks to protect your wealth.",
+    "answer": "In an inflationary economy, it's wise to invest in assets like real estate or stocks to protect your wealth. True, because these assets can act as hedges against inflation by potentially growing in value.",
+    "response": true
+  },
+  {
+    "id": 6,
+    "question": "Budgeting is not essential in an inflationary economy because prices keep going up.",
+    "answer": "Budgeting is not essential in an inflationary economy because prices keep going up. False, budgeting is crucial to manage your expenses and savings effectively during inflation.",
+    "response": false
+  },
+  {
+    "id": 7,
+    "question": "Inflation primarily affects people with high incomes, not those living in poverty.",
+    "answer": "Inflation primarily affects people with high incomes, not those living in poverty. False, inflation affects people at all income levels, but those in poverty can be hit harder as a larger portion of their income goes to basic necessities.",
+    "response": false
+  },
+  {
+    "id": 8,
+    "question": "During inflation, it's better to borrow money as the value of the debt decreases over time.",
+    "answer": "During inflation, it's better to borrow money as the value of the debt decreases over time. False, because high-interest rates during inflation can make borrowing more costly.",
+    "response": false
+  },
+  {
+    "id": 9,
+    "question": "The Nigerian government can control inflation entirely on its own.",
+    "answer": "The Nigerian government can control inflation entirely on its own. False, while the government has a role to play, inflation is influenced by various economic factors and global events.",
+    "response": false
+  },
+  {
+    "id": 10,
+    "question": "In an inflationary economy, businesses should raise their prices as much as they can.",
+    "answer": "In an inflationary economy, businesses should raise their prices as much as they can. False, as raising prices too high can lead to customers buying less, impacting business.",
+    "response": false
+  },
+  {
+    "id": 11,
+    "question": "Government policies like printing more money can help reduce inflation.",
+    "answer": "Government policies like printing more money can help reduce inflation. False, because printing too much money can actually worsen inflation.",
+    "response": false
+  },
+  {
+    "id": 12,
+    "question": "It's a good idea to stockpile goods and necessities when inflation is high.",
+    "answer": "It's a good idea to stockpile goods and necessities when inflation is high. False, stockpiling can lead to shortages and higher prices for others.",
+    "response": false
+  },
+  {
+    "id": 13,
+    "question": "High inflation means it's easier to save for the future.",
+    "answer": "High inflation means it's easier to save for the future. False, because it's harder to predict how much money you'll need due to rising prices.",
+    "response": false
+  },
+  {
+    "id": 14,
+    "question": "Small businesses should avoid adjusting their prices during inflation to keep customers happy.",
+    "answer": "Small businesses should avoid adjusting their prices during inflation to keep customers happy. False, businesses may need to adjust prices to cover rising costs.",
+    "response": false
+  },
+  {
+    "id": 15,
+    "question": "Having multiple sources of income can help individuals better cope with inflation.",
+    "answer": "Having multiple sources of income can help individuals better cope with inflation. True, because diversifying income can help mitigate the impact of rising prices.",
+    "response": true
+  },
+  {
+    "id": 16,
+    "question": "It's better to pay off debts quickly during inflation to avoid high-interest charges.",
+    "answer": "It's better to pay off debts quickly during inflation to avoid high-interest charges. True, as high interest rates can add to your debt burden during inflation.",
+    "response": true
+  },
+  {
+    "id": 17,
+    "question": "When prices are rising, it's better to spend all your money instead of saving.",
+    "answer": "When prices are rising, it's better to spend all your money instead of saving. False, saving is important to protect your money's value and plan for the future.",
+    "response": false
+  },
+  {
+    "id": 18,
+    "question": "Inflation only affects the prices of luxury items, not essentials.",
+    "answer": "Inflation only affects the prices of luxury items, not essentials. False, inflation affects the prices of both luxury and essential items.",
+    "response": false
+  },
+  {
+    "id": 19,
+    "question": "Having a savings account in a bank is an effective way to protect your money during inflation.",
+    "answer": "Having a savings account in a bank is an effective way to protect your money during inflation. False, as savings accounts may not keep up with inflation, leading to a loss of purchasing power.",
+    "response": false
+  },
+  {
+    "id": 20,
+    "question": "The government has no role to play in controlling inflation; it's entirely up to the people.",
+    "answer": "The government has no role to play in controlling inflation; it's entirely up to the people. False, the government can implement policies to help manage inflation, but it's not the sole factor.",
+    "response": false
+  },
+  {
+    "id": 21,
+    "question": "During inflation, it's essential to track your expenses and cut back on non-essential spending.",
+    "answer": "During inflation, it's essential to track your expenses and cut back on non-essential spending. True, as managing expenses becomes crucial in an inflationary economy.",
+    "response": true
+  },
+  {
+    "id": 22,
+    "question": "High inflation is a sign of a healthy economy.",
+    "answer": "High inflation is a sign of a healthy economy. False, because very high inflation can indicate economic instability and can be harmful to an economy.",
+    "response": false
+  },
+  {
+    "id": 23,
+    "question": "You should invest all your money in a single asset to protect it from inflation.",
+    "answer": "You should invest all your money in a single asset to protect it from inflation. False, diversifying investments is a more effective way to hedge against inflation.",
+    "response": false
+  },
+  {
+    "id": 24,
+    "question": "A higher minimum wage can help workers cope with inflation.",
+    "answer": "A higher minimum wage can help workers cope with inflation. True, because it can provide workers with more income to cover rising expenses.",
+    "response": true
+  },
+  {
+    "id": 25,
+    "question": "During inflation, it's a good idea to seek out additional job opportunities.",
+    "answer": "During inflation, it's a good idea to seek out additional job opportunities. True, as having multiple income sources can help you manage inflation.",
+    "response": true
+  },
+  {
+    "id": 26,
+    "question": "Inflation is entirely caused by the government printing too much money.",
+    "answer": "Inflation is entirely caused by the government printing too much money. False, as inflation is influenced by various economic factors, not just money supply.",
+    "response": false
+  },
+  {
+    "id": 27,
+    "question": "It's better to buy goods in smaller quantities when prices are rising.",
+    "answer": "It's better to buy goods in smaller quantities when prices are rising. True, because buying in smaller quantities can help you adapt to changing prices.",
+    "response": true
+  },
+  {
+    "id": 28,
+    "question": "Inflation doesn't affect the cost of education or healthcare.",
+    "answer": "Inflation doesn't affect the cost of education or healthcare. False, as inflation affects the prices of these essential services.",
+    "response": false
+  },
+  {
+    "id": 29,
+    "question": "Reducing unnecessary expenses is a smart strategy during inflation.",
+    "answer": "Reducing unnecessary expenses is a smart strategy during inflation. True, because cutting back on non-essential spending can help you save money.",
+    "response": true
+  },
+  {
+    "id": 30,
+    "question": "Individuals should focus on increasing their savings during high inflation.",
+    "answer": "Individuals should focus on increasing their savings during high inflation. True, as savings can help protect your money's value.",
+    "response": true
+  },
+  {
+    "id": 31,
+    "question": "Borrowing money is always a bad idea during inflation.",
+    "answer": "Borrowing money is always a bad idea during inflation. False, it depends on the interest rates and how you plan to use the borrowed money.",
+    "response": false
+  },
+  {
+    "id": 32,
+    "question": "It's wise to invest in foreign currencies to protect your wealth in an inflationary economy.",
+    "answer": "It's wise to invest in foreign currencies to protect your wealth in an inflationary economy. False, investing in foreign currencies can be risky and may not protect against inflation.",
+    "response": false
+  },
+  {
+    "id": 33,
+    "question": "People living in poverty are less affected by inflation because they don't have much money.",
+    "answer": "People living in poverty are less affected by inflation because they don't have much money. False, those in poverty can be hit harder by inflation as a larger portion of their income goes to basic necessities.",
+    "response": false
+  },
+  {
+    "id": 34,
+    "question": "Creating a long-term financial plan is unnecessary during inflation.",
+    "answer": "Creating a long-term financial plan is unnecessary during inflation. False, a long-term financial plan can help you navigate an inflationary economy more effectively.",
+    "response": false
+  },
+  {
+    "id": 35,
+    "question": "Employers should never consider raising wages for their employees during inflation.",
+    "answer": "Employers should never consider raising wages for their employees during inflation. True, raising wages can help employees cope with rising living costs.",
+    "response": true
+  },
+  {
+    "id": 36,
+    "question": "High inflation is a temporary problem and doesn't require long-term planning.",
+    "answer": "High inflation is a temporary problem and doesn't require long-term planning. False, high inflation can persist, so long-term planning is essential.",
+    "response": false
+  },
+  {
+    "id": 37,
+    "question": "Reducing energy consumption can help lower expenses during inflation.",
+    "answer": "Reducing energy consumption can help lower expenses during inflation. True, reducing energy usage can help you save on utility bills.",
+    "response": true
+  },
+  {
+    "id": 38,
+    "question": "It's a good idea to take on as much debt as possible during high inflation.",
+    "answer": "It's a good idea to take on as much debt as possible during high inflation. False, taking on too much debt can lead to financial difficulties during inflation.",
+    "response": false
+  },
+  {
+    "id": 39,
+    "question": "The government can control inflation by reducing taxes on goods and services.",
+    "answer": "The government can control inflation by reducing taxes on goods and services. False, reducing taxes can increase government spending and potentially worsen inflation.",
+    "response": false
+  },
+  {
+    "id": 40,
+    "question": "During inflation, investing in education and skills development is a good long-term strategy.",
+    "answer": "During inflation, investing in education and skills development is a good long-term strategy. True, as improving skills can lead to better job opportunities.",
+    "response": true
+  },
+  {
+    "id": 41,
+    "question": "High inflation can lead to job losses and increased unemployment.",
+    "answer": "High inflation can lead to job losses and increased unemployment. True, because businesses may struggle during high inflation, leading to job cuts.",
+    "response": true
+  },
+  {
+    "id": 42,
+    "question": "Buying goods in bulk can help you save money during inflation.",
+    "answer": "Buying goods in bulk can help you save money during inflation. True, buying in bulk can help you take advantage of lower prices.",
+    "response": true
+  }
+]
