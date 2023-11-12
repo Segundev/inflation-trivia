@@ -98,7 +98,7 @@
 		text-align: center;
 		align-items: center;
 		height: 100%;
-		margin-top: 7rem;
+		margin-top: 4rem;
 	}
 
 	.question-wrapper {
@@ -132,7 +132,7 @@
 		display: flex;
 		flex-direction: row;
 		gap: 2.5rem;
-		margin-top: 7rem;
+		margin-top: 4rem;
 	}
 
 	.button {
