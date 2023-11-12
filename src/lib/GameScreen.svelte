@@ -7,7 +7,11 @@
 
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
+	import { tweened } from 'svelte/motion';
 
+	const tweenedScore = tweened(0);
+	$: tweenedScore.set($score);
+	$: console.log(tweenedScore);
 	let questionsArray;
 	let questionCount = 0;
 	let choiceClicked, endGame;
@@ -35,7 +39,7 @@
 		<div class="score-count">
 			<Coin />
 			<div class="progress-wrapper">
-				<div class="progress-bar" />
+				<div class="progress-bar" style="width:{$tweenedScore * 10}%" />
 			</div>
 			<div class="score" class:choiceClicked>
 				{$score}
@@ -104,11 +108,10 @@
 	}
 
 	.progress-bar {
-		width: 80%;
 		height: 100%;
 		margin-top: 2.5px;
 		margin-bottom: 2.5px;
-		padding-right: 1px;
+		margin-right: 2.5px;
 		background-color: var(--yellow);
 		border-radius: 30px;
 	}
