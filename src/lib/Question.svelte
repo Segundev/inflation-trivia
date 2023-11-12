@@ -164,8 +164,10 @@
 		color: var(--white);
 	}
 
-	.button:focus {
-		outline: 0 !important;
+	.button:focus,
+	.button:visited,
+	.button:active {
+		outline: none;
 	}
 
 	.answer .button {

@@ -97,3 +97,18 @@ figure {
 	box-shadow: 0px 4px 8px rgba(64, 64, 64, 0.24);
 	cursor: pointer;
 }
+
+input,
+textarea,
+button,
+select,
+a,
+.button {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.button:focus,
+.button:visited,
+.button:active {
+	outline: none;
+}

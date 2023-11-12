@@ -78,10 +78,6 @@
 		animation-timing-function: cubic-bezier(0.01, 0.5, 0.5, 1);
 	}
 
-	.button:focus {
-		outline: 0 !important;
-	}
-
 	@keyframes nextButton {
 		0% {
 			transform: translateY(50px);
@@ -101,6 +97,12 @@
 		cursor: pointer;
 		transition-property: background-color;
 		transition-duration: 1.5s;
+	}
+
+	.button:focus,
+	.button:visited,
+	.button:active {
+		outline: none;
 	}
 
 	@media (width < 600px) {
