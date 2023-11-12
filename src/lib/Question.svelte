@@ -164,6 +164,10 @@
 		color: var(--white);
 	}
 
+	.button:focus {
+		outline: 0 !important;
+	}
+
 	.answer .button {
 		margin-top: 3rem;
 		background-color: var(--yellow);
