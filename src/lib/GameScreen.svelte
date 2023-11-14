@@ -64,9 +64,9 @@
 			</audio>
 			<div on:click={toggleAudio}>
 				{#if isPlaying}
-					<Play />
-				{:else}
 					<Pause />
+				{:else}
+					<Play />
 				{/if}
 			</div>
 		</div>
