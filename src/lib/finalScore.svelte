@@ -77,4 +77,23 @@
 		font-size: 1.75rem;
 		color: var(--white);
 	}
+
+	@media (width < 600px) {
+		.medal {
+			margin-top: -6rem;
+		}
+		.reward-text {
+			font-size: 1.2rem;
+		}
+		.score-header {
+			font-size: 1.5rem;
+			margin-top: 3rem;
+		}
+		.score-number {
+			font-size: 4.5rem;
+		}
+		.button {
+			font-size: 1.2rem;
+		}
+	}
 </style>

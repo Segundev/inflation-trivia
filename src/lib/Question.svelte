@@ -122,9 +122,9 @@
 
 	.question-icon {
 		position: absolute;
-		width: 72px;
-		height: 72px;
-		top: -2rem;
+		width: 42px;
+		height: 42px;
+		top: -1.2rem;
 		left: 1rem;
 	}
 
@@ -160,7 +160,7 @@
 	}
 
 	.answer {
-		margin-top: 15rem;
+		margin-top: 13rem;
 		color: var(--white);
 	}
 
@@ -173,5 +173,15 @@
 	.answer .button {
 		margin-top: 3rem;
 		background-color: var(--yellow);
+	}
+
+	@media (width < 600px) {
+		.text {
+			inline-size: 360px;
+		}
+
+		.button {
+			font-size: 1.5rem;
+		}
 	}
 </style>

@@ -8,6 +8,8 @@
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import { tweened } from 'svelte/motion';
+	import Play from './Play.svelte';
+	import Pause from './Pause.svelte';
 
 	const tweenedScore = tweened(0);
 	$: tweenedScore.set($score);
@@ -15,6 +17,8 @@
 	let questionsArray;
 	let questionCount = 0;
 	let choiceClicked, endGame;
+	let isPlaying = false;
+	let audio;
 
 	function getData(dataArr) {
 		const randomItems = dataArr.slice();
@@ -23,6 +27,15 @@
 			[randomItems[i], randomItems[j]] = [randomItems[j], randomItems[i]];
 		}
 		return randomItems.slice(0, 10);
+	}
+
+	function toggleAudio() {
+		if (isPlaying) {
+			audio.pause();
+		} else {
+			audio.play();
+		}
+		isPlaying = !isPlaying;
 	}
 
 	questionsArray = getData(data);
@@ -36,6 +49,19 @@
 	class:choiceClicked
 >
 	<div class="top-nav-layout">
+		<div class="audio-wrapper">
+			<audio id="background-music" loop bind:this={audio}>
+				<source src="audio.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+			<div on:click={toggleAudio}>
+				{#if isPlaying}
+					<Play />
+				{:else}
+					<Pause />
+				{/if}
+			</div>
+		</div>
 		<div class="score-count">
 			<Coin />
 			<div class="progress-wrapper">
@@ -72,13 +98,18 @@
 	}
 
 	.gamescreen-wrapper.choiceClicked {
-		background-image: url('/images/market.jpg');
+		/* background-image: url('/images/market.jpg'); */
+		background-color: var(--green);
 	}
 
 	.top-nav-layout {
 		position: fixed;
 		width: 100%;
-		padding-top: 1.5rem;
+		margin-top: 1.5rem;
+		padding: 0 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.screen {
@@ -94,12 +125,11 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		margin-right: 50px;
 	}
 
 	.score-count .progress-wrapper {
 		width: 120px;
-		height: 20px;
+		height: 12px;
 		background-color: #f4f4f4;
 		border-radius: 6rem;
 		margin-left: -10px;
@@ -111,7 +141,7 @@
 		height: 100%;
 		margin-top: 2.5px;
 		margin-bottom: 2.5px;
-		margin-right: 2.5px;
+		margin-right: 2px;
 		background-color: var(--yellow);
 		border-radius: 30px;
 	}

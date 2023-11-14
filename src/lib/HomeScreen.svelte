@@ -26,7 +26,7 @@
 
 <style>
 	.homescreen-wrapper {
-		background-color: var(--white);
+		background-color: var(--yellow);
 		height: 100%;
 		display: flex;
 		flex-direction: column;
@@ -45,7 +45,7 @@
 		font-family: var(--display);
 		font-size: 3.5rem;
 		word-wrap: break-word;
-		color: var(--black);
+		color: var(--white);
 		margin-bottom: 1rem;
 	}
 
@@ -115,7 +115,8 @@
 		}
 
 		header p {
-			font-size: 1.2rem;
+			font-size: 1rem;
+			line-height: 1.45;
 		}
 	}
 </style>
