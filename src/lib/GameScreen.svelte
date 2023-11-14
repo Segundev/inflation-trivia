@@ -34,6 +34,7 @@
 			audio.pause();
 		} else {
 			audio.play();
+			audio.volume = 0.01;
 		}
 		isPlaying = !isPlaying;
 	}
