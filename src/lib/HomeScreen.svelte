@@ -119,4 +119,10 @@
 			line-height: 1.45;
 		}
 	}
+
+	@media (width < 400px) {
+		header {
+			width: 350px;
+		}
+	}
 </style>

@@ -184,4 +184,10 @@
 			font-size: 1.5rem;
 		}
 	}
+
+	@media (width < 400px) {
+		.text {
+			inline-size: 340px;
+		}
+	}
 </style>
