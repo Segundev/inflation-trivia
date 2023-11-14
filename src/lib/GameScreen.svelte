@@ -13,12 +13,15 @@
 
 	const tweenedScore = tweened(0);
 	$: tweenedScore.set($score);
-	$: console.log(tweenedScore);
+
 	let questionsArray;
 	let questionCount = 0;
-	let choiceClicked, endGame;
+	let endGame;
 	let isPlaying = false;
 	let audio;
+	let choiceClicked;
+	let isRight;
+	let isWrong;
 
 	function getData(dataArr) {
 		const randomItems = dataArr.slice();
@@ -42,12 +45,16 @@
 	questionsArray = getData(data);
 
 	$: if (questionCount === 10) endGame = true;
+
+	$: if (choiceClicked) isRight = choiceClicked.response === choiceClicked.answer ? true : false;
+	$: if (choiceClicked) isWrong = choiceClicked.response !== choiceClicked.answer ? true : false;
 </script>
 
 <div
 	in:fly={{ x: -1000, duration: 1500, easing: quintOut, delay: 250 }}
 	class="gamescreen-wrapper"
-	class:choiceClicked
+	class:isRight
+	class:isWrong
 >
 	<div class="top-nav-layout">
 		<div class="audio-wrapper">
@@ -80,9 +87,11 @@
 					{question}
 					{index}
 					on:nextQuestion={(e) => {
-						(questionCount = e.detail), (choiceClicked = false);
+						(questionCount = e.detail), (isRight = null), (isWrong = null);
 					}}
-					on:optionSelected={(e) => (choiceClicked = true)}
+					on:optionSelected={(e) => {
+						choiceClicked = e.detail;
+					}}
 				/>
 			{/if}
 		{/each}
@@ -98,9 +107,14 @@
 		position: relative;
 	}
 
-	.gamescreen-wrapper.choiceClicked {
+	.gamescreen-wrapper.isRight {
 		/* background-image: url('/images/market.jpg'); */
 		background-color: var(--green);
+	}
+
+	.gamescreen-wrapper.isWrong {
+		/* background-image: url('/images/market.jpg'); */
+		background-color: var(--red);
 	}
 
 	.top-nav-layout {

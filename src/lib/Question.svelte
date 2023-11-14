@@ -8,24 +8,17 @@
 
 	export let question;
 	export let index;
-
 	let isChoosed = false;
 	let isOpen = true;
-	let isTrue;
-	let isFalse;
-	let isClick;
+
+	let optionSelect;
 	let selectedAnswer;
 
 	function increment() {
 		score.update((n) => n + 1);
 	}
 
-	$: if (selectedAnswer === question.response) {
-		isTrue = true;
-		increment();
-	} else {
-		isFalse = true;
-	}
+	$: if (selectedAnswer === question.response) increment();
 </script>
 
 <div class="gamescreen question" class:isChoosed>
@@ -48,39 +41,24 @@
 	<div class="button-select-wrapper">
 		<button
 			class="button"
-			class:isTrue
-			class:isFalse
-			class:isClick
 			on:click={() => {
-				dispatch('optionSelected', true),
-					(isChoosed = true),
-					(isOpen = false),
-					(selectedAnswer = true),
-					(isClick = true);
+				(isChoosed = true), (isOpen = false), (selectedAnswer = true);
+				dispatch('optionSelected', { response: question.response, answer: selectedAnswer });
 			}}>true</button
 		>
 		<button
 			class="button"
-			class:isClick
-			class:isTrue
-			class:isFalse
 			on:click={() => {
-				dispatch('optionSelected', true),
-					(isChoosed = true),
+				(isChoosed = true),
 					(isOpen = false),
 					(selectedAnswer = false),
-					(isClick = true);
+					dispatch('optionSelected', { response: question.response, answer: selectedAnswer });
 			}}>false</button
 		>
 	</div>
 </div>
 
-<div
-	in:fade={{ y: 0, duration: 2500, easing: quadOut }}
-	class="gamescreen answer"
-	class:isOpen
-	class:isClick
->
+<div in:fade={{ y: 0, duration: 2500, easing: quadOut }} class="gamescreen answer" class:isOpen>
 	<div class="header">Correct Answer: {question.response}</div>
 	<div class="text">{question.answer}</div>
 	<button
@@ -149,14 +127,6 @@
 
 	.isOpen {
 		display: none;
-	}
-
-	.isClick.isTrue {
-		background-color: var(--green);
-	}
-
-	.isClick.isFalse {
-		background-color: var(--red);
 	}
 
 	.answer {
