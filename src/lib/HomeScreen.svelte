@@ -26,8 +26,12 @@
 
 <style>
 	.homescreen-wrapper {
-		background: url('/images/background-cover.png') no-repeat center fixed, var(--yellow);
+		background: url('/images/background-cover.png') no-repeat center center fixed, var(--yellow);
 		background-size: 100%;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
